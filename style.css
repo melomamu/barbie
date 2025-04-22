@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+:root {
+  --cor-principal: #FF69B4;
+  --cor-secundaria: #FF1493;
+  --cor-destaque: #FFC0CB;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  color: var(--cor-principal);
+  background-color: #fff0f6;
+}
+
+h1, h2, h5 {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+}
+
+.lead, .btn-link {
+  color: var(--cor-destaque);
+  font-weight: bold;
+}
+
+a, .btn-link:hover {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+.badge.bg-pink {
+  background-color: var(--cor-destaque);
+  color: #fff;
+  margin-right: 5px;
+}
+
+.card {
+  border: 2px solid var(--cor-principal);
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
