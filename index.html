@@ -7,72 +7,167 @@
   <title>Portfólio da Barbie</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container text-center">
-    <img src="img/painel-barbie-dreamhouse-03-2-00x1-50-barbie.webp" alt="Avatar da Barbie" class="rounded-circle" width="150" height="150">
-    <p class="lead">Eu sou a Barbie!</p>
+  <header class="container text-center mt-4">
+    <img src="img/avatar-perfil.png" alt="Foto da Barbie" class="avatar-barbie">
+    <p class="lead">Você pode ser tudo que quiser!</p>
     <h1>Tenho mil sonhos e mil profissões</h1>
-    <p>Sou astronauta, estilista, médica, presidente e muito mais! A cada passo, mostro que meninas podem ser o que quiserem. Veja alguns dos meus projetos incríveis!</p>
-    <p>Minhas habilidades</p>
-    <div>
-      <p class="badge bg-pink">Moda</p>
-      <p class="badge bg-pink">Exploração Espacial</p>
-      <p class="badge bg-pink">Veterinária</p>
-      <p class="badge bg-pink">Carreira Diplomática</p>
-    </div>
+    <p class="intro-text">Sou astronauta, estilista, médica, presidente e muito mais! A cada passo, mostro que meninas podem ser o que quiserem.</p>
+    <button class="btn btn-outline-pink" data-bs-toggle="modal" data-bs-target="#modalSobreMim">Sobre Mim</button>
   </header>
 
+  <!-- Modal Sobre Mim -->
+  <div class="modal fade" id="modalSobreMim" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sobre Mim</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Olá, meu nome é Barbie! Sou uma mulher cheia de sonhos e apaixonada por aprender e realizar. Minha missão é inspirar meninas ao redor do mundo a acreditarem que podem conquistar o que quiserem!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container mt-5">
+    <h2 class="text-center">Habilidades</h2>
+    <div class="text-center habilidades">
+      <span class="badge">Socialização</span>
+      <span class="badge">Criatividade</span>
+      <span class="badge">Empatia</span>
+      <span class="badge">Liderança</span>
+    </div>
+  </section>
+
   <main class="container mt-5">
-    <h2>Meus Projetos</h2>
-    <div class="row">
-      <!-- Projeto 1 -->
-      <div class="col-md-4">
+    <h2 class="text-center">Meus Projetos</h2>
+    <div class="row justify-content-center">
+
+      <!-- Fashion Design -->
+      <div class="col-md-3 mb-4">
         <div class="card">
-          <img src="img/e188aece99eaedbe6c58f8ceabd41af4.jpg" class="card-img-top" alt="Projeto de Moda da Barbie">
+          <img src="img/projeto-estilista.png" class="card-img-top" alt="Projeto de Moda da Barbie">
           <div class="card-body">
-            <h5 class="card-title">Passarela Rosa: Design de Moda</h5>
-            <p class="card-text">Um desfile virtual com meus looks favoritos, criados com muito estilo e glamour! Você pode explorar diferentes combinações e tendências.</p>
-            <a href="#" class="btn btn-link">Ver projeto</a>
+            <h5 class="card-title">Passarela Rosa</h5>
+            <p class="card-text">Looks criativos e desfiles de moda incríveis!</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalModa">Ver projeto</button>
           </div>
         </div>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/45b5243cbc86c3fde5c8f1a5fd4857f1.webp" class="card-img-top" alt="Missão Espacial da Barbie">
-          <div class="card-body">
-            <h5 class="card-title">Missão Galáxia: Aventura Espacial</h5>
-            <p class="card-text">Um jogo onde você pilota uma nave espacial como Barbie astronauta, visitando planetas e coletando estrelas mágicas.</p>
-            <a href="#" class="btn btn-link">Ver projeto</a>
+      <!-- Modal Moda -->
+      <div class="modal fade" id="modalModa" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Passarela Rosa</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Um desfile virtual com meus looks favoritos, criados com muito estilo e glamour! Você pode explorar diferentes combinações e tendências.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Projeto 3 -->
-      <div class="col-md-4">
+      <!-- Pediatra -->
+      <div class="col-md-3 mb-4">
         <div class="card">
-          <img src="img/WhatsApp Image 2025-04-22 at 15.01.57.jpeg" class="card-img-top" alt="Clínica da Barbie">
+          <img src="img/projeto-pediatra.png" class="card-img-top" alt="Barbie Pediatra">
           <div class="card-body">
-            <h5 class="card-title">Clínica da Barbie Pet</h5>
-            <p class="card-text">Aqui cuido dos meus animaizinhos com muito amor! Um site interativo que ensina sobre cuidados com pets.</p>
-            <a href="#" class="btn btn-link">Ver projeto</a>
+            <h5 class="card-title">Dra. Barbie</h5>
+            <p class="card-text">Cuido da saúde das crianças com amor.</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalPediatra">Ver projeto</button>
           </div>
         </div>
       </div>
+
+      <!-- Modal Pediatra -->
+      <div class="modal fade" id="modalPediatra" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Barbie Pediatra</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Dra. Barbie oferece cuidados médicos infantis com muito carinho, promovendo saúde, alegria e empatia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cozinheira -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="img/projeto-cozinheira2.png" class="card-img-top" alt="Barbie Cozinheira">
+          <div class="card-body">
+            <h5 class="card-title">Chef Barbie</h5>
+            <p class="card-text">Receitas criativas com muito sabor e cor.</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalCozinheira">Ver projeto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Cozinheira -->
+      <div class="modal fade" id="modalCozinheira" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Chef Barbie</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Barbie explora o mundo da culinária com pratos criativos, saudáveis e lindamente apresentados, inspirando quem ama cozinhar!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Presidente -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="img/projeto-presidente.png" class="card-img-top" alt="Barbie Presidente">
+          <div class="card-body">
+            <h5 class="card-title">Barbie Presidente</h5>
+            <p class="card-text">Liderança para mudar o mundo!</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalPresidente">Ver projeto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Presidente -->
+      <div class="modal fade" id="modalPresidente" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Barbie Presidente</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Barbie lidera com empatia e inteligência, mostrando que a política também pode ser feminina, forte e cheia de propósito.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
-  <footer class="container py-5">
-    <h2>Entre em contato</h2>
-    <div>
-      <i class="bi bi-instagram"></i>
-      <a href="https://instagram.com/barbieoficial">Instagram</a>
+  <footer class="container py-5 text-center">
+    <h2>Contato</h2>
+    <div class="mb-3">
+      <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/barbie/?hl=pt-br">Instagram</a>
     </div>
-    <p class="my-5 text-center">© 2024 Barbie World - Todos os direitos reservados</p>
+    <div>
+      <i class="bi bi-github"></i> <a href="https://github.com/seuusuario">GitHub</a>
+    </div>
+    <p class="mt-4">©️ 2024 Barbie World - Todos os direitos reservados</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
