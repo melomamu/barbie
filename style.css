@@ -1,46 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-:root {
-  --cor-principal: #FF69B4;
-  --cor-secundaria: #FF1493;
-  --cor-destaque: #FFC0CB;
-}
-
 body {
-  font-family: 'Pacifico', cursive;
-  color: var(--cor-principal);
-  background-color: #fff0f6;
+  font-family: 'Noto Serif', serif;
+  background-color: #ffffff;
+  color: #FF1493;
 }
 
 h1, h2, h5 {
-  color: var(--cor-secundaria);
+  color: #FF1493;
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
-.lead, .btn-link {
-  color: var(--cor-destaque);
-  font-weight: bold;
-}
-
-a, .btn-link:hover {
-  color: var(--cor-principal);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--cor-secundaria);
-}
-
-.badge.bg-pink {
-  background-color: var(--cor-destaque);
+.badge {
+  font-size: 1.2rem;
+  background-color: #FFC0CB;
   color: #fff;
-  margin-right: 5px;
+  margin: 0.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
 }
 
 .card {
-  border: 2px solid var(--cor-principal);
+  border: 2px solid #FF69B4;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card-title {
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.lead, .btn-link {
+  color: #FF69B4;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #FF1493;
+}
+
+
+.avatar-barbie {
+  display: block;
+  margin: 0 auto;
+  width: 200px;  
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.habilidades {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.habilidades .badge {
   font-size: 1.2rem;
+  background-color: #FF1493;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  margin: 0.3rem;
+}
+
+
+.btn-outline-pink {
+  border-color: #FF69B4;
+}
+
+
+.sobre-mim {
+  color: #FF1493 !important; 
+  font-size: 1.6rem; 
+  font-weight: bold;
+  margin-top: 2rem;
 }
